@@ -1,4 +1,20 @@
 Productiva::Application.routes.draw do
+  get "user/index"
+
+  get "user/create"
+
+  get "user/edit"
+
+  get "user/update"
+
+  get "user/destroy"
+
+  Rails.application.routes.draw do
+    resource :user, except: [:show]
+
+    root to: "user#index"
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,11 +1,17 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.21'
+gem 'mongoid', '3.1.6'
+gem 'mongoid_auto_increment'
+gem 'mongoid-multitenancy', '0.4.2'
+gem 'mongoid-slug', '4.0.0'
+
+## Auditoria
+gem 'mongoid-history', '0.4.7'
+gem 'mongoid_userstamp'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-
 
 # Gems used only for assets and not required
 # in production environments by default.
