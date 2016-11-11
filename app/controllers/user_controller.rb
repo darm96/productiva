@@ -11,7 +11,7 @@ class UserController < ApplicationController
     @users = User.new(user_params)
 
     if @users.save
-      redirect_to user_path, notice: "Usuario creadio con éxito" and return
+      redirect_to user_path, notice: "Usuario creado con éxito" and return
     end
     render 'new'
   end
